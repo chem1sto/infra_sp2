@@ -10,7 +10,7 @@
 - Django Rest Framework 3.12.4
 - Gunicorn 20.0.4
 - Nginx 1.21.3-alpine
-- Postres 13.0-alpine
+- Postgres 13.0-alpine
 - Docker 20.10.23
 - Docker Compose 2.15.1
 
