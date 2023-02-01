@@ -42,7 +42,7 @@ cd infra/
 ```
 docker compose up -d
 ```
-7. Выполните по очереди команды.
+7. Выполните по очереди команды.<p>
 7.1 Выполните миграции:
 ```
 docker compose exec web python manage.py makemigrations reviews
