@@ -8,6 +8,9 @@
 - Python 3.10
 - Django 2.2.16
 - Django Rest Framework 3.12.4
+- Gunicorn 20.0.4
+- Nginx 1.21.3-alpine
+- Postres 13.0-alpine
 - Docker 20.10.23
 - Docker Compose 2.15.1
 
@@ -42,22 +45,22 @@ cd infra/
 ```
 docker compose up -d
 ```
-7.1 Выполните миграции:
+7. Выполните миграции:
 ```
 docker compose exec web python manage.py makemigrations reviews
 ```
 ```
 docker compose exec web python manage.py migrate
 ```
-7.2 Создайте суперпользователя:
+8. Создайте суперпользователя:
 ```
 docker compose exec web python manage.py createsuperuser
 ```
-7.3 Соберите все статические файлы в папку static:
+9. Соберите все статические файлы в папку static:
 ```
 docker compose exec web python manage.py collectstatic --no-input 
 ```
-8. Приложение активно и готово к использованию. Можно перейти по адресу http://localhost/admin/ и авторизоваться, введя свои данные от созданного суперпользователя.
+10. Приложение активно и готово к использованию. Можно перейти по адресу http://localhost/admin/ и авторизоваться, введя свои данные от созданного суперпользователя.
 
 ### Документация
 Доступна после запуска сервера: [Redoc](http://localhost/redoc/).
