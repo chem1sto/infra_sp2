@@ -9,8 +9,8 @@
 - Django 2.2.16
 - Django Rest Framework 3.12.4
 - Gunicorn 20.0.4
-- Nginx 1.21.3-alpine
-- Postgres 13.0-alpine
+- Nginx
+- Postgres
 - Docker 20.10.23
 - Docker Compose 2.15.1
 
@@ -30,7 +30,7 @@ python3 -m venv venv
 ```
 source env/bin/activate
 ```
-4. Установить зависимости из файла requirements.txt:
+4. Установите зависимости из файла requirements.txt:
 ```
 python3 -m pip install --upgrade pip
 ```
